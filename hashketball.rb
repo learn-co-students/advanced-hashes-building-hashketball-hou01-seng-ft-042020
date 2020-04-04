@@ -133,10 +133,11 @@ def game_hash
   
   result = {}
   
+  ### location
   result[:home] = {}
   result[:away] = {}
   
-  #### team_info
+  #### team_data (attribute, data)
 
   home_team = result[:home]
   home_team[:team_name] = "Brooklyn Nets"
@@ -153,7 +154,7 @@ def game_hash
   away_team[:players] = []
 
 
-  #### players_data
+  #### players_list
   
   h_players =  home_team[:players]
   h_players << h_players[0]
